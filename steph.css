@@ -1,0 +1,317 @@
+ * {
+      font-family: 'Baloo 2', cursive;
+    }
+    html {
+  scroll-behavior: smooth;
+}
+    .page-wrapper {
+    border: 8px solid #1f135c; 
+    margin: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.2); 
+    background-image: url("martinezimages/martinezbg.jpg"); 
+    background-size: cover; 
+    background-position: 20% center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+
+    body {
+      background-color: #D4BCF7; 
+    }
+
+    
+    header h1 {
+      color: #000000;
+    }
+      .header-box {
+  background-color: #D4BCF7 !important;
+  color: #2d0830; 
+}    
+      
+
+
+.glow-wrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: 0.5rem; 
+}
+
+
+.glow-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: -6px; 
+  border-radius: inherit;
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  background-size: 600%;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  animation: glowing 20s linear infinite;
+  z-index: 0;
+}
+
+
+.glow-wrapper:hover::before {
+  opacity: 1;
+}
+
+
+.glow-img {
+  position: relative;
+  display: block;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+
+@keyframes glowing {
+  0%   { background-position: 0 0; }
+  50%  { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+.box-text h3 {
+  color: #2c3e50; 
+}
+
+.box-text p {
+  color: #2c3e50; 
+}
+.box-text {
+  background-color: #D4BCF7 !important;
+}
+    
+    header h4 {
+      color: #000000; 
+    }
+    .card {
+      background-color: #000000; 
+      border: 2px solid #000000;
+      color: rgb(0, 0, 0);
+    }
+    .list-group-item {
+      background-color: #D4BCF7; 
+      border: 1px solid #1F135C;
+      color: rgb(0, 0, 0);
+    }
+    .accordion-button {
+      background-color: #D4BCF7; 
+      color: rgb(7, 3, 3);
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: #932191; 
+      color: white;
+    }
+    .accordion-body {
+      background-color: #8aaff5;
+      color: rgb(12, 4, 4);
+    }
+
+.box-wrapper {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.contact-box {
+  background-color: #6f42c1; 
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 40px;
+  color: #fff; 
+}
+
+.contact-box h3,
+.contact-box label {
+  color: #fff; 
+}
+
+.contact-box input,
+.contact-box textarea {
+  border: none;
+}
+
+.btn-success {
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+  z-index: 800;
+  background-color: #932191;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Baloo 2', cursive;
+}
+
+.btn-success:hover {
+  background-color: #6a1470;
+}
+.btn-success:hover {
+  color: transparent;
+}
+.btn-success:hover::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-success:hover::after {
+  content: "✉︎";
+  opacity: 1;
+
+}
+.carousel-img {
+  height: 400px;       
+  object-fit: cover;   
+}
+.carousel-caption {
+  background-color: rgba(224, 145, 223, 0.7);
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  max-width: 30%;  
+  margin: 0 auto;  
+  color: #2d0830;
+}
+.carousel-static-caption {
+  position: absolute;
+  top: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(224, 145, 223, 0.7);
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #2d0830;
+  font-family: inherit;
+  z-index: 10;
+}
+.carousel-static-caption h3 {
+  color: #2d0830;
+}
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #932191;
+      border-radius: 50%;
+    }
+    
+    h3 {
+      color: #ffffff;
+    }
+
+   
+.home-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: #932191;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Baloo 2', cursive;
+  min-width: 130px; 
+  text-align: center;
+}
+
+.home-btn:hover {
+  background-color: #6a1470;
+  color: transparent; 
+}
+
+.home-btn::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.home-btn[data-mode="top"]:hover::after {
+  content: "🏠︎";
+  opacity: 1;
+}
+
+
+.home-btn[data-mode="contact"]:hover::after {
+  content: "✉︎";
+  opacity: 1;
+}
+
+.games-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-color: #932191;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Baloo 2', cursive;
+  overflow: hidden;
+}
+
+
+.games-btn:hover {
+  background-color: #f0c0f3;
+  color: transparent; 
+}
+
+
+.games-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.games-btn:hover::after {
+  content: "🕹️"; 
+  opacity: 1;
+}
+
+.home-btn {
+  transition: all 0.4s ease-in-out;
+  min-width: 120px; 
+  text-align: center;
+}
+
+
+@keyframes buttonFlash {
+  0% { background-color: #932191; }
+  50% { background-color: #4a0e4b; } 
+  100% { background-color: #932191; }
+}
+
+
+.btn-transition-flash {
+  animation: buttonFlash 0.3s ease-in-out;
+}
